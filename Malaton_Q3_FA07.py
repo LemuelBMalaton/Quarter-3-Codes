@@ -12,5 +12,11 @@ for i in range(3):
 print("Average score")
 for i in range(3):
     print(sum(scores[i])/len(scores[i]))
+highestscore = []
+lowestscore = []
 for i in range(3):
-    print("Highest score:", max(scores[i]), "Lowest score:", min(scores[i]))
+    highestscore.append(max(scores[i]))
+print("Highest score:", max(highestscore))
+for i in range(3):
+    lowestscore.append(min(scores[i]))
+print("Lowest score:", min(lowestscore))
